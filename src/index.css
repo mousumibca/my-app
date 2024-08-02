@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E8E0DE ;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.change_content:after/*apply in TextForm.js*/
+{
+    content:"UpperCase";/*when change h1 show dream word */
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext
+{
+    30%{content:"LowerCase";}
+    70%{content:"Capitalized";}
+}
